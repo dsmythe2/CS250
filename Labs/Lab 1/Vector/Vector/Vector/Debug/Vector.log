@@ -1,0 +1,4 @@
+﻿  Vectorexample.cpp
+c:\cs250\labs\lab 1\vector\vector\vector\vectorexample.cpp(24): warning C4018: '<': signed/unsigned mismatch
+  Vector.vcxproj -> C:\CS250\Labs\Lab 1\Vector\Vector\Debug\Vector.exe
+  Vector.vcxproj -> C:\CS250\Labs\Lab 1\Vector\Vector\Debug\Vector.pdb (Partial PDB)
