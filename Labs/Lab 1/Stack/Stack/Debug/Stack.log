@@ -1,0 +1,4 @@
+﻿  stack.cpp
+c:\users\daniel\desktop\cs250\cs250\labs\lab 1\bookdrop\stack\stack\stack.cpp(30): warning C4101: 'answer': unreferenced local variable
+  Stack.vcxproj -> C:\Users\Daniel\Desktop\CS250\CS250\Labs\Lab 1\Bookdrop\Stack\Debug\Stack.exe
+  Stack.vcxproj -> C:\Users\Daniel\Desktop\CS250\CS250\Labs\Lab 1\Bookdrop\Stack\Debug\Stack.pdb (Partial PDB)
