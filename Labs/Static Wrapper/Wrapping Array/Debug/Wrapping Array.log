@@ -1,0 +1,6 @@
+﻿  SmartStaticArray.cpp
+c:\users\svc-student\desktop\cs 250\wrapping array\wrapping array\smartstaticarray.cpp(110): warning C4717: 'SmartStaticArray::Extend': recursive on all control paths, function will cause runtime stack overflow
+c:\users\svc-student\desktop\cs 250\wrapping array\wrapping array\smartstaticarray.cpp(219): warning C4717: 'SmartStaticArray::operator[]': recursive on all control paths, function will cause runtime stack overflow
+c:\users\svc-student\desktop\cs 250\wrapping array\wrapping array\smartstaticarray.cpp(230): warning C4172: returning address of local variable or temporary: arr2
+  Wrapping Array.vcxproj -> C:\Users\svc-student\Desktop\CS 250\Wrapping Array\Debug\Wrapping Array.exe
+  Wrapping Array.vcxproj -> C:\Users\svc-student\Desktop\CS 250\Wrapping Array\Debug\Wrapping Array.pdb (Partial PDB)
