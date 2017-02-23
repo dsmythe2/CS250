@@ -1,0 +1,118 @@
+# depslib dependency file v1.0
+1486003008 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Exercises/Static Array Wrapper/Project files/cuTEST/TesterBase.cpp
+	"TesterBase.hpp"
+	"Menu.hpp"
+
+1486003725 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Exercises/Static Array Wrapper/Project files/cuTEST/TesterBase.hpp
+	<string>
+	<list>
+	<functional>
+
+1486003008 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Exercises/Static Array Wrapper/Project files/cuTEST/Menu.hpp
+	<iostream>
+	<vector>
+	<string>
+	<limits>
+
+1486003671 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Exercises/Static Array Wrapper/Project files/main.cpp
+	<iostream>
+	"Tester.hpp"
+
+1485926354 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Exercises/Static Array Wrapper/Project files/Tester_SmartStaticArray.hpp
+	"SmartStaticArray.hpp"
+	<string>
+	<iostream>
+
+1485968340 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Exercises/Static Array Wrapper/Project files/SmartStaticArray.hpp
+	<iostream>
+	<string>
+
+1485968329 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Exercises/Static Array Wrapper/Project files/SmartStaticArray.cpp
+	"SmartStaticArray.hpp"
+
+1485967298 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Exercises/Static Array Wrapper/Project files/Tester_SmartStaticArray.cpp
+	"Tester_SmartStaticArray.hpp"
+
+1486003823 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Exercises/Static Array Wrapper/Project files/Tester.hpp
+	"cuTEST/TesterBase.hpp"
+
+1486011492 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Static Array Wrapper/Project files/cuTEST/TesterBase.cpp
+	"TesterBase.hpp"
+	"Menu.hpp"
+
+1486008846 /home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Static Array Wrapper/Project files/cuTEST/TesterBase.hpp
+	<string>
+	<list>
+	<functional>
+
+1486009138 /home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Static Array Wrapper/Project files/cuTEST/Menu.hpp
+	<iostream>
+	<vector>
+	<string>
+	<limits>
+
+1486003671 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Static Array Wrapper/Project files/main.cpp
+	<iostream>
+	"Tester.hpp"
+
+1486013294 /home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Static Array Wrapper/Project files/Tester.hpp
+	"SmartStaticArray.hpp"
+	"cuTEST/StringUtil.hpp"
+	"cuTEST/TesterBase.hpp"
+	"cuTEST/Menu.hpp"
+	<vector>
+	<iostream>
+	<string>
+
+1486013387 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Static Array Wrapper/Project files/SmartStaticArray.cpp
+	"SmartStaticArray.hpp"
+	"cuTEST/Menu.hpp"
+
+1486009599 /home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Static Array Wrapper/Project files/SmartStaticArray.hpp
+	<iostream>
+	<string>
+
+1486009899 /home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Static Array Wrapper/Project files/cuTEST/StringUtil.hpp
+	<string>
+	<sstream>
+
+1486011492 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Dynamic Array Wrapper/Project files/cuTEST/TesterBase.cpp
+	"TesterBase.hpp"
+	"Menu.hpp"
+
+1486008846 /home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Dynamic Array Wrapper/Project files/cuTEST/TesterBase.hpp
+	<string>
+	<list>
+	<functional>
+
+1486009138 /home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Dynamic Array Wrapper/Project files/cuTEST/Menu.hpp
+	<iostream>
+	<vector>
+	<string>
+	<limits>
+
+1486003671 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Dynamic Array Wrapper/Project files/main.cpp
+	<iostream>
+	"Tester.hpp"
+
+1486574482 /home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Dynamic Array Wrapper/Project files/Tester.hpp
+	"SmartDynamicArray.hpp"
+	"cuTEST/StringUtil.hpp"
+	"cuTEST/TesterBase.hpp"
+	"cuTEST/Menu.hpp"
+	<vector>
+	<iostream>
+	<string>
+
+1486573637 /home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Dynamic Array Wrapper/Project files/SmartDynamicArray.hpp
+	<iostream>
+	<string>
+
+1486009899 /home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Dynamic Array Wrapper/Project files/cuTEST/StringUtil.hpp
+	<string>
+	<sstream>
+
+1486574359 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Exercises 2017-01/Dynamic Array Wrapper/Project files/SmartDynamicArray.cpp
+	"SmartDynamicArray.hpp"
+	"cuTEST/Menu.hpp"
+
