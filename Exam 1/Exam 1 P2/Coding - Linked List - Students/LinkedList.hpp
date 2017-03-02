@@ -51,7 +51,8 @@ class CoordPairLinkedList
 
       // Do the thing!
 
-	  if (this->IsEmpty())
+
+	  if (this->Size() == 0)
 	  {
 		  m_ptrFirst = newNodeX;
 		  m_ptrLast = newNodeY;
