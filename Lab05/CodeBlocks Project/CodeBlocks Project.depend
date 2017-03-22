@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1490197254 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 05 - Stacks and Queues/main.cpp
+	<iostream>
+	<string>
+	"Queue/Queue.hpp"
+	"Stack/Stack.hpp"
+
+1490197017 /home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 05 - Stacks and Queues/Queue/Queue.hpp
+	"../DoublyLinkedList.hpp"
+
+1490197013 /home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 05 - Stacks and Queues/DoublyLinkedList.hpp
+	<stdexcept>
+
+1490197259 /home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 05 - Stacks and Queues/Stack/Stack.hpp
+	"../DoublyLinkedList.hpp"
+
