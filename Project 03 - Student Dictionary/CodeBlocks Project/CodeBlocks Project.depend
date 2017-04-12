@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1491417323 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Projects 2017-01/Dictionary/main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"StudentTable.hpp"
+
+1491415545 /home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Projects 2017-01/Dictionary/Dictionary.hpp
+	<string>
+	<iostream>
+	<vector>
+
+1491417351 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Projects 2017-01/Dictionary/StudentTable.cpp
+	"StudentTable.hpp"
+	<iostream>
+	<string>
+	<fstream>
+
+1491417128 /home/rayechell/TEACHING/cs250/cs-250-private-files/Homework Projects 2017-01/Dictionary/StudentTable.hpp
+	<string>
+	<iostream>
+	<vector>
+
