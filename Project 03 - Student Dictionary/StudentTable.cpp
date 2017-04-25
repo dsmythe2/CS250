@@ -33,11 +33,23 @@ void StudentTable::Insert( int studentId, const string& name )
     // Generate index from the studentId
     // Insert into the m_students array
 
-	int stuIDIndex = studentId % TABLE_SIZE;
-	int index = HashFunction(stuIDIndex);
+	int index;
+	if (m_collisionMethod == LINEAR)
+	{
+		index = LinearProbe(studentId);
+	}
+	else if (m_collisionMethod == QUADRATIC)
+	{
+		int val = 0;
+		index = QuadraticProbe(studentId, val);
+	}
+	else if (m_collisionMethod == DOUBLE)
+	{
+		index = HashFunction(studentId);
+	}
 
-	m_students[index].key = studentId;
 	m_students[index].value = name;
+	m_students[index].key = studentId;
 }
 
 /* DONE */ void StudentTable::Output( const string& filename )
