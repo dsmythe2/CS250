@@ -1,0 +1,161 @@
+\hypertarget{classExpression}{}\section{Expression Class Reference}
+\label{classExpression}\index{Expression@{Expression}}
+
+
+Collaboration diagram for Expression\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classExpression_afcf87716bf0abfe8d414c92529e1564a}{Expression} ()\hypertarget{classExpression_afcf87716bf0abfe8d414c92529e1564a}{}\label{classExpression_afcf87716bf0abfe8d414c92529e1564a}
+
+\begin{DoxyCompactList}\small\item\em Set m\+\_\+ptr\+Root to nullptr. \end{DoxyCompactList}\item 
+\hyperlink{classExpression_a3e99570b177da619eeb2c5787cbb148e}{$\sim$\+Expression} ()\hypertarget{classExpression_a3e99570b177da619eeb2c5787cbb148e}{}\label{classExpression_a3e99570b177da619eeb2c5787cbb148e}
+
+\begin{DoxyCompactList}\small\item\em If m\+\_\+ptr\+Root is not nullptr, then delete it. \end{DoxyCompactList}\item 
+void \hyperlink{classExpression_a4517f9600a10f715def471a0fe0d1960}{Set\+Postfix\+Expression} (const string \&postfix\+Exp)\hypertarget{classExpression_a4517f9600a10f715def471a0fe0d1960}{}\label{classExpression_a4517f9600a10f715def471a0fe0d1960}
+
+\begin{DoxyCompactList}\small\item\em Calls the Parse method to parse the given expression. \end{DoxyCompactList}\item 
+string \hyperlink{classExpression_ac92e9a0c6746efc25f68bf52e53cfe0b}{Get\+Postfix} ()
+\begin{DoxyCompactList}\small\item\em Returns the expression in postfix format. \end{DoxyCompactList}\item 
+string \hyperlink{classExpression_a5ce8727756959f65c6c746b6573d3f8f}{Get\+Infix} ()
+\begin{DoxyCompactList}\small\item\em Returns the expression in infix format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classExpression_a0fdef693c4d3742175598aef752689f4}{Parse\+Postfix\+Expression} (const string \&postfix\+Exp)
+\begin{DoxyCompactList}\small\item\em Steps through the expression string and turns it into an expression tree. \end{DoxyCompactList}\item 
+bool \hyperlink{classExpression_ae2784e1d7ea958a06e5e5ccadcf1d0dd}{Is\+Operator} (char value)\hypertarget{classExpression_ae2784e1d7ea958a06e5e5ccadcf1d0dd}{}\label{classExpression_ae2784e1d7ea958a06e5e5ccadcf1d0dd}
+
+\begin{DoxyCompactList}\small\item\em Return true if the given char is a math operator, false otherwise. \end{DoxyCompactList}\item 
+string \hyperlink{classExpression_a39330fd10347a8fa4314e38d1f9237ff}{Get\+Postfix} (\hyperlink{classExpNode}{Exp\+Node} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Recursive function that will build the string for the given node and its left/right children in postfix order. \end{DoxyCompactList}\item 
+string \hyperlink{classExpression_a444a845069c98d72484edf46017813ec}{Get\+Infix} (\hyperlink{classExpNode}{Exp\+Node} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Recursive function that will build the string for the given node and its left/right children in infix order. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classExpNode}{Exp\+Node} $\ast$ {\bfseries m\+\_\+ptr\+Root}\hypertarget{classExpression_a021a7a29ab58b04a03d19ff878dbe606}{}\label{classExpression_a021a7a29ab58b04a03d19ff878dbe606}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Expression@{Expression}!Get\+Infix@{Get\+Infix}}
+\index{Get\+Infix@{Get\+Infix}!Expression@{Expression}}
+\subsubsection[{\texorpdfstring{Get\+Infix()}{GetInfix()}}]{\setlength{\rightskip}{0pt plus 5cm}string Expression\+::\+Get\+Infix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classExpression_a5ce8727756959f65c6c746b6573d3f8f}{}\label{classExpression_a5ce8727756959f65c6c746b6573d3f8f}
+
+
+Returns the expression in infix format. 
+
+Return the result of the Get\+Infix recursive method. Begin from the root node. \begin{DoxyReturn}{Returns}
+$<$string$>$ 
+\end{DoxyReturn}
+\index{Expression@{Expression}!Get\+Infix@{Get\+Infix}}
+\index{Get\+Infix@{Get\+Infix}!Expression@{Expression}}
+\subsubsection[{\texorpdfstring{Get\+Infix(\+Exp\+Node $\ast$node)}{GetInfix(ExpNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}string Expression\+::\+Get\+Infix (
+\begin{DoxyParamCaption}
+\item[{{\bf Exp\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classExpression_a444a845069c98d72484edf46017813ec}{}\label{classExpression_a444a845069c98d72484edf46017813ec}
+
+
+Recursive function that will build the string for the given node and its left/right children in infix order. 
+
+Terminating case\+: If the node is nullptr, then return an empty string.
+
+Recursing case\+: build a new string in infix order, calling Get\+Infix on left and right children to add their values and add the current node\textquotesingle{}s value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & $<$Exp\+Node$\ast$$>$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$string$>$ 
+\end{DoxyReturn}
+\index{Expression@{Expression}!Get\+Postfix@{Get\+Postfix}}
+\index{Get\+Postfix@{Get\+Postfix}!Expression@{Expression}}
+\subsubsection[{\texorpdfstring{Get\+Postfix()}{GetPostfix()}}]{\setlength{\rightskip}{0pt plus 5cm}string Expression\+::\+Get\+Postfix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classExpression_ac92e9a0c6746efc25f68bf52e53cfe0b}{}\label{classExpression_ac92e9a0c6746efc25f68bf52e53cfe0b}
+
+
+Returns the expression in postfix format. 
+
+Return the result of the Get\+Postfix recursive method. Begin from the root node. \begin{DoxyReturn}{Returns}
+$<$string$>$ 
+\end{DoxyReturn}
+\index{Expression@{Expression}!Get\+Postfix@{Get\+Postfix}}
+\index{Get\+Postfix@{Get\+Postfix}!Expression@{Expression}}
+\subsubsection[{\texorpdfstring{Get\+Postfix(\+Exp\+Node $\ast$node)}{GetPostfix(ExpNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}string Expression\+::\+Get\+Postfix (
+\begin{DoxyParamCaption}
+\item[{{\bf Exp\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classExpression_a39330fd10347a8fa4314e38d1f9237ff}{}\label{classExpression_a39330fd10347a8fa4314e38d1f9237ff}
+
+
+Recursive function that will build the string for the given node and its left/right children in postfix order. 
+
+Terminating case\+: If the node is nullptr, then return an empty string.
+
+Recursing case\+: build a new string in postfix order, calling Get\+Postfix on left and right children to add their values and add the current node\textquotesingle{}s value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & $<$Exp\+Node$\ast$$>$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$string$>$ 
+\end{DoxyReturn}
+\index{Expression@{Expression}!Parse\+Postfix\+Expression@{Parse\+Postfix\+Expression}}
+\index{Parse\+Postfix\+Expression@{Parse\+Postfix\+Expression}!Expression@{Expression}}
+\subsubsection[{\texorpdfstring{Parse\+Postfix\+Expression(const string \&postfix\+Exp)}{ParsePostfixExpression(const string &postfixExp)}}]{\setlength{\rightskip}{0pt plus 5cm}void Expression\+::\+Parse\+Postfix\+Expression (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{postfix\+Exp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classExpression_a0fdef693c4d3742175598aef752689f4}{}\label{classExpression_a0fdef693c4d3742175598aef752689f4}
+
+
+Steps through the expression string and turns it into an expression tree. 
+
+For each character, determine if it is a space (skip it), an operator (+, -\/, $\ast$, /, or $^\wedge$), or an operand (everything else).
+
+For an Operator\+:
+\begin{DoxyItemize}
+\item Create a new \hyperlink{classExpNode}{Exp\+Node} dynamic object and set its value to the current letter from the postfix\+Exp.
+\item The top-\/most item of the stack will become this node\textquotesingle{}s R\+I\+G\+HT child
+\item The 2nd-\/top-\/most item of the stack will become this node\textquotesingle{}s L\+E\+FT child
+\item (Afterward, the top and 2nd-\/top nodes will be removed from the stack)
+\item Push the new node onto the stack.
+\end{DoxyItemize}
+
+For an Operand\+:
+\begin{DoxyItemize}
+\item Create a new \hyperlink{classExpNode}{Exp\+Node} dynamic object and set its value to the current letter from the postfix\+Exp.
+\item Push the new node onto the stack.
+\end{DoxyItemize}
+
+Once done parsing the string, set the m\+\_\+ptr\+Root to the top item of the stack.
+
+
+\begin{DoxyParams}{Parameters}
+{\em postfix\+Exp} & $<$const string\&$>$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$void$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Expression.\+hpp\item 
+Expression.\+cpp\end{DoxyCompactItemize}

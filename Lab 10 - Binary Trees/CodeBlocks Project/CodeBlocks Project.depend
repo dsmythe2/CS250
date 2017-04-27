@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1493157269 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 10 - Binary Tree/main.cpp
+	"Expression.hpp"
+	<iostream>
+
+1493157149 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 10 - Binary Tree/Expression.cpp
+	"Expression.hpp"
+	"StringUtil.hpp"
+	<stack>
+	<iostream>
+
+1493156986 /home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 10 - Binary Tree/Expression.hpp
+	<string>
+
+1486009899 /home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 10 - Binary Tree/StringUtil.hpp
+	<string>
+	<sstream>
+
+1493157269 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Labs/Lab 10 - Binary Trees/main.cpp
+	"Expression.hpp"
+	<iostream>
+
+1493156986 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Labs/Lab 10 - Binary Trees/Expression.hpp
+	<string>
+

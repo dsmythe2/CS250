@@ -1,0 +1,29 @@
+\hypertarget{classExpNode}{}\section{Exp\+Node Class Reference}
+\label{classExpNode}\index{Exp\+Node@{Exp\+Node}}
+
+
+Collaboration diagram for Exp\+Node\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Exp\+Node} (char v)\hypertarget{classExpNode_a8c0788b282f3fe81fab4915ad91bb1dd}{}\label{classExpNode_a8c0788b282f3fe81fab4915ad91bb1dd}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char {\bfseries value}\hypertarget{classExpNode_a3b42db1ffe8db5deed513d63ca866ecc}{}\label{classExpNode_a3b42db1ffe8db5deed513d63ca866ecc}
+
+\item 
+\hyperlink{classExpNode}{Exp\+Node} $\ast$ {\bfseries ptr\+Left}\hypertarget{classExpNode_abdbd7d97c4be6afca4676104c2f132a8}{}\label{classExpNode_abdbd7d97c4be6afca4676104c2f132a8}
+
+\item 
+\hyperlink{classExpNode}{Exp\+Node} $\ast$ {\bfseries ptr\+Right}\hypertarget{classExpNode_a22482f2ad3fa556bfa31a5eceb1edd5f}{}\label{classExpNode_a22482f2ad3fa556bfa31a5eceb1edd5f}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Expression.\+hpp\end{DoxyCompactItemize}
