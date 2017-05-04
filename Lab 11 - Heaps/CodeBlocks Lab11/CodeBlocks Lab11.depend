@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1493836708 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 11 - Heaps/main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<map>
+	<fstream>
+	"BinaryHeap.hpp"
+
+1493837430 /home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 11 - Heaps/BinaryHeap.hpp
+	<vector>
+	<exception>
+	<fstream>
+

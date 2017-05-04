@@ -1,0 +1,18 @@
+﻿  main.cpp
+c:\users\svc-student\desktop\lab 11 - heaps\binaryheap.hpp(32): warning C4018: '<': signed/unsigned mismatch
+  c:\users\svc-student\desktop\lab 11 - heaps\binaryheap.hpp(28): note: while compiling class template member function 'BinaryHeap<std::string>::BinaryHeap(const std::vector<std::string,std::allocator<_Ty>> &)'
+          with
+          [
+              _Ty=std::string
+          ]
+  c:\users\svc-student\desktop\lab 11 - heaps\main.cpp(44): note: see reference to function template instantiation 'BinaryHeap<std::string>::BinaryHeap(const std::vector<std::string,std::allocator<_Ty>> &)' being compiled
+          with
+          [
+              _Ty=std::string
+          ]
+  c:\users\svc-student\desktop\lab 11 - heaps\main.cpp(44): note: see reference to class template instantiation 'BinaryHeap<std::string>' being compiled
+c:\users\svc-student\desktop\lab 11 - heaps\binaryheap.hpp(181): warning C4018: '<=': signed/unsigned mismatch
+  c:\users\svc-student\desktop\lab 11 - heaps\binaryheap.hpp(177): note: while compiling class template member function 'void BinaryHeap<std::string>::PercolateDown(int)'
+  c:\users\svc-student\desktop\lab 11 - heaps\binaryheap.hpp(152): note: see reference to function template instantiation 'void BinaryHeap<std::string>::PercolateDown(int)' being compiled
+  VisualStudio Lab 11.vcxproj -> C:\Users\svc-student\Desktop\Lab 11 - Heaps\VisualStudio Lab 11\Debug\VisualStudio Lab 11.exe
+  VisualStudio Lab 11.vcxproj -> C:\Users\svc-student\Desktop\Lab 11 - Heaps\VisualStudio Lab 11\Debug\VisualStudio Lab 11.pdb (Partial PDB)

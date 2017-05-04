@@ -1,0 +1,140 @@
+\hypertarget{classBinaryHeap}{}\section{Binary\+Heap$<$ T $>$ Class Template Reference}
+\label{classBinaryHeap}\index{Binary\+Heap$<$ T $>$@{Binary\+Heap$<$ T $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBinaryHeap_a5c1a5fa452e3a008a08b4fe0b0e4599a}{Binary\+Heap} (const vector$<$ T $>$ \&items)
+\item 
+bool \hyperlink{classBinaryHeap_a6bbf1a12804cab08943e7b0cd6afa3fb}{Is\+Empty} () const 
+\item 
+const T \& \hyperlink{classBinaryHeap_adbad89fb493d9c88325b2e9a5e82871a}{Find\+Min} () const 
+\item 
+void \hyperlink{classBinaryHeap_a0cead3dc009e8401ac1665d6b424e7e2}{Insert} (const T \&new\+Item)
+\item 
+void \hyperlink{classBinaryHeap_a1529b44ebc5ab9b2c6b388f2a86ae8df}{Delete\+Min} ()
+\item 
+void {\bfseries Display\+Linear} (ofstream \&output)\hypertarget{classBinaryHeap_a39235f9660f4cd36e38809ef8127cfef}{}\label{classBinaryHeap_a39235f9660f4cd36e38809ef8127cfef}
+
+\item 
+void {\bfseries Remove\+In\+Order} (ofstream \&output)\hypertarget{classBinaryHeap_a1e9d5143469a90a880cfd9ea6c5b5088}{}\label{classBinaryHeap_a1e9d5143469a90a880cfd9ea6c5b5088}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBinaryHeap_aaaf3be9f83d101dd14f7c18a43d3d4a4}{Build\+Heap} ()
+\item 
+void \hyperlink{classBinaryHeap_ac52a0be1ef7171a4262019c8f00315b6}{Percolate\+Down} (int hole\+Index)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries m\+\_\+size}\hypertarget{classBinaryHeap_aa213ba6c286d9c781ee58bb4fdc59779}{}\label{classBinaryHeap_aa213ba6c286d9c781ee58bb4fdc59779}
+
+\item 
+vector$<$ T $>$ {\bfseries m\+\_\+array}\hypertarget{classBinaryHeap_a189e2b7f5214172b241bef49c340f796}{}\label{classBinaryHeap_a189e2b7f5214172b241bef49c340f796}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Binary\+Heap@{Binary\+Heap}!Binary\+Heap@{Binary\+Heap}}
+\index{Binary\+Heap@{Binary\+Heap}!Binary\+Heap@{Binary\+Heap}}
+\subsubsection[{\texorpdfstring{Binary\+Heap(const vector$<$ T $>$ \&items)}{BinaryHeap(const vector< T > &items)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Binary\+Heap}$<$ T $>$\+::{\bf Binary\+Heap} (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ T $>$ \&}]{items}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBinaryHeap_a5c1a5fa452e3a008a08b4fe0b0e4599a}{}\label{classBinaryHeap_a5c1a5fa452e3a008a08b4fe0b0e4599a}
+
+\begin{DoxyParams}{Parameters}
+{\em items} & $<$const vector$<$\+T$>$\&$>$ the initial items to put in the heap.\\
+\hline
+\end{DoxyParams}
+First, copy the items from the items vector into the m\+\_\+arrays vector. However, we do not put anything at position 0 in m\+\_\+array, so make sure you\textquotesingle{}re storing items in i+1 for m\+\_\+array, when it is item i from the items vector. Then, call the Build\+Heap function. 
+
+\subsection{Member Function Documentation}
+\index{Binary\+Heap@{Binary\+Heap}!Build\+Heap@{Build\+Heap}}
+\index{Build\+Heap@{Build\+Heap}!Binary\+Heap@{Binary\+Heap}}
+\subsubsection[{\texorpdfstring{Build\+Heap()}{BuildHeap()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Binary\+Heap}$<$ T $>$\+::Build\+Heap (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classBinaryHeap_aaaf3be9f83d101dd14f7c18a43d3d4a4}{}\label{classBinaryHeap_aaaf3be9f83d101dd14f7c18a43d3d4a4}
+Iterate through indexes from \mbox{[}m\+\_\+size/2, 0), decrementing your counter by 1 each time. Within the loop, call Percolate\+Down on the current value of the counter. \index{Binary\+Heap@{Binary\+Heap}!Delete\+Min@{Delete\+Min}}
+\index{Delete\+Min@{Delete\+Min}!Binary\+Heap@{Binary\+Heap}}
+\subsubsection[{\texorpdfstring{Delete\+Min()}{DeleteMin()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Binary\+Heap}$<$ T $>$\+::Delete\+Min (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBinaryHeap_a1529b44ebc5ab9b2c6b388f2a86ae8df}{}\label{classBinaryHeap_a1529b44ebc5ab9b2c6b388f2a86ae8df}
+If the heap is empty, just return. Otherwise, set the value of the min item of the heap (the element at position 1) to the value of the {\itshape last} item in the heap (position m\+\_\+size). Then, decrement m\+\_\+size, and call Percolate\+Down on index 1. \index{Binary\+Heap@{Binary\+Heap}!Find\+Min@{Find\+Min}}
+\index{Find\+Min@{Find\+Min}!Binary\+Heap@{Binary\+Heap}}
+\subsubsection[{\texorpdfstring{Find\+Min() const }{FindMin() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const T\& {\bf Binary\+Heap}$<$ T $>$\+::Find\+Min (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBinaryHeap_adbad89fb493d9c88325b2e9a5e82871a}{}\label{classBinaryHeap_adbad89fb493d9c88325b2e9a5e82871a}
+\begin{DoxyReturn}{Returns}
+T\& the minimum item in the heap (at index 1). 
+\end{DoxyReturn}
+\index{Binary\+Heap@{Binary\+Heap}!Insert@{Insert}}
+\index{Insert@{Insert}!Binary\+Heap@{Binary\+Heap}}
+\subsubsection[{\texorpdfstring{Insert(const T \&new\+Item)}{Insert(const T &newItem)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Binary\+Heap}$<$ T $>$\+::Insert (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{new\+Item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBinaryHeap_a0cead3dc009e8401ac1665d6b424e7e2}{}\label{classBinaryHeap_a0cead3dc009e8401ac1665d6b424e7e2}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Item} & $<$const T\&$>$ The new item to insert\\
+\hline
+\end{DoxyParams}
+If m\+\_\+size is one less than the size of the m\+\_\+array, then tell m\+\_\+array to resize to double its current size (use the vector\textquotesingle{}s resize() function.)
+
+Afterward\+:
+\begin{DoxyEnumerate}
+\item Create an integer called {\itshape hole}, and assign it to the current value of m\+\_\+size.
+\item Increment m\+\_\+size by one
+\item Create a loop. It will continue looping W\+H\+I\+LE hole $>$ 1 \&\& new\+Item $<$ m\+\_\+array\mbox{[} hole / 2 \mbox{]} And at the end of each cycle, it should E\+X\+E\+C\+U\+TE hole /= 2
+
+3a. Within the loop, set the element of m\+\_\+array at position hole to the value of the element of m\+\_\+array at position hole/2.
+\item After the loop, set the element of m\+\_\+array at position hole equal to the new\+Item. 
+\end{DoxyEnumerate}\index{Binary\+Heap@{Binary\+Heap}!Is\+Empty@{Is\+Empty}}
+\index{Is\+Empty@{Is\+Empty}!Binary\+Heap@{Binary\+Heap}}
+\subsubsection[{\texorpdfstring{Is\+Empty() const }{IsEmpty() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool {\bf Binary\+Heap}$<$ T $>$\+::Is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBinaryHeap_a6bbf1a12804cab08943e7b0cd6afa3fb}{}\label{classBinaryHeap_a6bbf1a12804cab08943e7b0cd6afa3fb}
+\begin{DoxyReturn}{Returns}
+bool true if m\+\_\+array is empty, or false otherwise. 
+\end{DoxyReturn}
+\index{Binary\+Heap@{Binary\+Heap}!Percolate\+Down@{Percolate\+Down}}
+\index{Percolate\+Down@{Percolate\+Down}!Binary\+Heap@{Binary\+Heap}}
+\subsubsection[{\texorpdfstring{Percolate\+Down(int hole\+Index)}{PercolateDown(int holeIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Binary\+Heap}$<$ T $>$\+::Percolate\+Down (
+\begin{DoxyParamCaption}
+\item[{int}]{hole\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classBinaryHeap_ac52a0be1ef7171a4262019c8f00315b6}{}\label{classBinaryHeap_ac52a0be1ef7171a4262019c8f00315b6}
+
+\begin{DoxyParams}{Parameters}
+{\em hole\+Index} & $<$int$>$ The position in the heap to percolate down.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyEnumerate}
+\item Create an integer called child
+\item Create a temp T item, and assign it to the value of the element of m\+\_\+array at the hole\+Index.
+\item Loop while hole\+Index $\ast$ 2 $<$= m\+\_\+size\+: 3a. Set child to hole\+Index $\ast$ 2.
+
+3b. If the child is not m\+\_\+size, and the element of m\+\_\+array at child+1 is less than the element of m\+\_\+array at child\+: Increment child by 1.
+
+3c. If the element of m\+\_\+array at child is less than the temp value\+: Set the element of m\+\_\+array at position hole\+Index to the element of m\+\_\+array at position child. O\+T\+H\+E\+R\+W\+I\+SE break.
+
+3d. At the end of the loop cycle, set hole\+Index to the child.
+\item Set the element of m\+\_\+array at position hole\+Index to the temp value. 
+\end{DoxyEnumerate}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Binary\+Heap.\+hpp\end{DoxyCompactItemize}
