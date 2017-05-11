@@ -367,7 +367,7 @@ private:
     */
     Node<TK, TD>* FindNode( const TK& key )
     {
-		Node<TK, TD>* ptrCurrent->m_ptrRoot;
+		Node<TK, TD>* ptrCurrent = m_ptrRoot;
 
 		while (ptrCurrent->key != key)
 		{
