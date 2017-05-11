@@ -354,6 +354,10 @@ int Tester::Delete()
             "Deleted leaf node 7, root > right > right is not the expected value!",
             STR( 6 ), STR( bst2.m_ptrRoot->ptrRight->ptrLeft->key ) );
     }
+	else
+	{
+		TestPass();
+	}
 
 
     DisplayScore();
