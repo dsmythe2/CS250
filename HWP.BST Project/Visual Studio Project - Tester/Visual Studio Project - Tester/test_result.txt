@@ -1,0 +1,208 @@
+
+RUN ALL TESTS
+
+
+--------------------------------------------------------------------------------
+TEST SET: Insert()
+PREREQUISITE FUNCTIONS: Insert()
+--------------------------------------------------------------------------------
+Test 1: Test 1: Insert 1 item
+
+TEST FAILED: Insert()
+Insert Test 1Inserted one item into tree, but m_ptrRoot is nullptr!
+
+Test 2: Test 2: Insert B-A-C
+
+TEST FAILED: Insert()
+Insert Test 2Inserted three items into tree, but m_ptrRoot is nullptr!
+
+Test 3: Test 3: Insert A-B-C
+
+TEST FAILED: Insert()
+Insert Test 3Inserted three items into tree, but m_ptrRoot is nullptr!
+
+Test 4: Test 4: Insert C-B-A
+
+TEST FAILED: Insert()
+Insert Test 4Inserted three items into tree, but m_ptrRoot is nullptr!
+
+
+(FAIL) 0 passed out of 4 tests
+
+
+--------------------------------------------------------------------------------
+TEST SET: Contains()
+PREREQUISITE FUNCTIONS: Contains(), Insert()
+--------------------------------------------------------------------------------
+Test 1: Test 1: Check if an item contained in the list returns true, tree size 1
+
+TEST FAILED: Contains Test 1
+Inserted "cow" into tree at root, but it was not found by Contains()!
+
+Test 2: Test 2: Check if an item contained in the list returns true, tree size 3
+
+TEST FAILED: Contains Test 2
+Inserted a, b, c, and d into tree, but it was not found by Contains()!
+
+Test 3: Test 3: Check if an item NOT contained in the list returns false
+
+(FAIL) 1 passed out of 3 tests
+
+
+--------------------------------------------------------------------------------
+TEST SET: FindNode()
+PREREQUISITE FUNCTIONS: FindNode()
+--------------------------------------------------------------------------------
+Test 1: Test 1: Check if an item contained in the list returns true, tree size 1
+
+TEST FAILED: FindNode Test 1
+Inserted "cow" into tree at root, but it was not found by FindNode()!
+
+Test 2: Test 2: Check if an item contained in the list returns true, tree size 3
+
+TEST FAILED: FindNode Test 2
+Inserted a, b, c, and d into tree, but it was not found by FindNode()!
+
+Test 3: Test 3: Check if an item NOT contained in the list returns false
+
+(FAIL) 1 passed out of 3 tests
+
+
+--------------------------------------------------------------------------------
+TEST SET: FindParentOfNode()
+PREREQUISITE FUNCTIONS: FindParentOfNode()
+--------------------------------------------------------------------------------
+Test 1: Test 1: Check if an item contained in the list returns true, tree size 1
+Test 2: Test 2: Check if an item contained in the list returns true, tree size 3
+
+TEST FAILED: FindParentOfNode Test 2
+Inserted b, a, c, d into tree, parent of d should be c, but it returned nullptr!
+
+Test 3: Test 3: Check if an item NOT contained in the list doesn't return nullptr
+
+(FAIL) 2 passed out of 3 tests
+
+
+--------------------------------------------------------------------------------
+TEST SET: Delete()
+PREREQUISITE FUNCTIONS: Insert(), Delete()
+--------------------------------------------------------------------------------
+Test 1: Delete Test 1: Delete a leaf
+
+TEST FAILED: Delete Test 1
+Deleted leaf node 7, but item count is not 2!
+	 EXPECTED OUTPUT: 2
+	 ACTUAL OUTPUT:   0
+
+Test 2: Delete Test 2: Delete a non-leaf; Insert: 5, 3, 7, 6, 8
+
+TEST FAILED: Delete Test 2
+Deleted leaf node 7, but item count is not 4!
+	 EXPECTED OUTPUT: 4
+	 ACTUAL OUTPUT:   0
+
+
+(FAIL) 0 passed out of 2 tests
+
+
+--------------------------------------------------------------------------------
+TEST SET: GetInOrder()
+PREREQUISITE FUNCTIONS: GetInOrder(), Insert()
+--------------------------------------------------------------------------------
+Test 1: Test 1: Insert F, B, G, A, D, I, H, C, E into tree, get back as in-order...
+
+TEST FAILED: GetInOrder Test 1
+Inserted into tree: F, B, G, A, D, I, H, C, E. Didn't get expected output.
+	 EXPECTED OUTPUT: "A B C D E F G H I "
+	 ACTUAL OUTPUT:   ""
+
+
+(FAIL) 0 passed out of 1 tests
+
+
+--------------------------------------------------------------------------------
+TEST SET: GetPreOrder()
+PREREQUISITE FUNCTIONS: GetPreOrder(), Insert()
+--------------------------------------------------------------------------------
+Test 1: Test 1: Insert F, B, G, A, D, I, H, C, E into tree, get back as pre-order...
+
+TEST FAILED: GetPreOrder Test 1
+Inserted into tree: F, B, G, A, D, I, H, C, E. Didn't get expected output.
+	 EXPECTED OUTPUT: "F B A D C E G I H "
+	 ACTUAL OUTPUT:   ""
+
+
+(FAIL) 0 passed out of 1 tests
+
+
+--------------------------------------------------------------------------------
+TEST SET: GetPostOrder()
+PREREQUISITE FUNCTIONS: GetPostOrder(), Insert()
+--------------------------------------------------------------------------------
+Test 1: Test 1: Insert F, B, G, A, D, I, H, C, E into tree, get back as post-order...
+
+TEST FAILED: GetPostOrder Test 1
+Inserted into tree: F, B, G, A, D, I, H, C, E. Didn't get expected output.
+	 EXPECTED OUTPUT: "A C E D B H I G F "
+	 ACTUAL OUTPUT:   ""
+
+
+(FAIL) 0 passed out of 1 tests
+
+
+--------------------------------------------------------------------------------
+TEST SET: GetMax()
+PREREQUISITE FUNCTIONS: GetMax(), Insert()
+--------------------------------------------------------------------------------
+Test 1: Test 1: Insert one item, get max value...
+
+TEST FAILED: GetMax Test 1
+Inserted one item, but received nullptr from GetMax()!
+
+Test 2: Test 2: Insert B, A, C, D, E, get max value...
+
+TEST FAILED: GetMax Test 2
+Inserted B, A, C, D, E, but received nullptr from GetMax()!
+
+
+(FAIL) 0 passed out of 2 tests
+
+
+--------------------------------------------------------------------------------
+TEST SET: GetCount()
+PREREQUISITE FUNCTIONS: GetCount(), Insert()
+--------------------------------------------------------------------------------
+Test 1: Test 1: Insert nothing into tree, check count...
+Test 2: Test 2: Insert five things into tree, check count...
+
+(PASS) 2 passed out of 2 tests
+
+
+--------------------------------------------------------------------------------
+TEST SET: GetHeight()
+PREREQUISITE FUNCTIONS: GetHeight(), Insert()
+--------------------------------------------------------------------------------
+Test 1: Test 1: Empty tree...
+Test 2: Test 2: One level...
+
+TEST FAILED: GetHeight Test 2
+Wrong result for GetHeight()!
+	 EXPECTED OUTPUT: 1
+	 ACTUAL OUTPUT:   0
+
+Test 3: Test 3: Two levels...
+
+TEST FAILED: GetHeight Test 3
+Wrong result for GetHeight()!
+	 EXPECTED OUTPUT: 2
+	 ACTUAL OUTPUT:   0
+
+Test 4: Test 4: Three levels...
+
+TEST FAILED: GetHeight Test 4
+Wrong result for GetHeight()!
+	 EXPECTED OUTPUT: 3
+	 ACTUAL OUTPUT:   0
+
+
+(FAIL) 1 passed out of 4 tests

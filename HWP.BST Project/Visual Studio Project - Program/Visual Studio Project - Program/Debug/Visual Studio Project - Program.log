@@ -1,0 +1,20 @@
+﻿  program_main.cpp
+  EmployeeManager.cpp
+c:\users\svc-student\desktop\hwp.bst project\employeemanager.cpp(85): warning C4018: '<': signed/unsigned mismatch
+c:\users\svc-student\desktop\hwp.bst project\binarysearchtree.hpp(370): error C3551: if a trailing return type is used then the leading return type shall be the single type-specifier 'auto' (not 'overloaded function type')
+  c:\users\svc-student\desktop\hwp.bst project\binarysearchtree.hpp(369): note: while compiling class template member function 'Node<TK,TD> *BinarySearchTree<TK,TD>::FindNode(const TK &)'
+          with
+          [
+              TK=std::string,
+              TD=Employee *
+          ]
+  c:\users\svc-student\desktop\hwp.bst project\binarysearchtree.hpp(348): note: see reference to function template instantiation 'Node<TK,TD> *BinarySearchTree<TK,TD>::FindNode(const TK &)' being compiled
+          with
+          [
+              TK=std::string,
+              TD=Employee *
+          ]
+  c:\users\svc-student\desktop\hwp.bst project\employeemanager.hpp(43): note: see reference to class template instantiation 'BinarySearchTree<std::string,Employee *>' being compiled
+c:\users\svc-student\desktop\hwp.bst project\binarysearchtree.hpp(370): error C3613: missing return type after '->' ('int' assumed)
+c:\users\svc-student\desktop\hwp.bst project\binarysearchtree.hpp(370): error C2146: syntax error: missing ';' before identifier 'm_ptrRoot'
+  Generating Code...
